@@ -17,8 +17,8 @@ highScoreElement.innerText = `High Score: ${highScore}`;
 
 const updateFoodPosition = () => {
     // Passing a random 1 - 30 value as food position
-    foodX = 20;
-    foodY = 17;
+    foodX = Math.floor(Math.random() * 30) + 1;
+    foodY = Math.floor(Math.random() * 30) + 1;
 }
 
 const handleGameOver = () => {
